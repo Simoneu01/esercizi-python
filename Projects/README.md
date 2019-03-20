@@ -4,4 +4,4 @@
 
 - Farmacia
 
-- GUI
+- Rubrica Amici
