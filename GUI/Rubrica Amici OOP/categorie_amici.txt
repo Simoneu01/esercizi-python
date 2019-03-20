@@ -1,0 +1,5 @@
+Categorie Amici,Descrizione,
+S,Compagno di Studio,
+D,Compagno di Danza,
+G,Compagno di Giochi,
+C,Compagno di Cuore,

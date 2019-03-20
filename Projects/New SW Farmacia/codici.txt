@@ -1,0 +1,6 @@
+Codici Identificativi,Descrizione,
+C,Cosmetico,
+PD,Dietetico,
+F,Farmaco,
+ILL,illegale,
+2,2,

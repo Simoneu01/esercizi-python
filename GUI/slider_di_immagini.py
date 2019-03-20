@@ -23,7 +23,7 @@ def press_animali(button):
             i = 0
         else:
             i = i + 1
-    app.reloadImage("image", "img/{}.gif".format(img[i]))
+    app.reloadImage("image", "../img/{}.gif".format(img[i]))
     app.setLabel('description', '{}'.format(img[i]))
 
 
@@ -36,7 +36,7 @@ app.addButton(ARROW_LEFT, press_animali, 0, 0)
 app.addButton(ARROW_RIGHT, press_animali, 0, 2)
 
 # add image
-app.addImage("image", "img/{}.gif".format(img[i]), 0, 1)
+app.addImage("image", "../img/{}.gif".format(img[i]), 0, 1)
 
 # add label with description
 app.addLabel("description", "{}".format(img[i]), 1, 1)
