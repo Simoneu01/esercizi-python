@@ -1,5 +1,4 @@
 Nome,Cognome,Numero di telefono,E-mail,Categoria Amico,
 Simone,Ungaro,3203204953,simoneungaro@hotmail.it,C,
 Davide,Grossi,34956346436346,davide.grossi@gmail.com,C,
-Paolo,Fracno,35235325253,paolo.fraco@gmail.com,S,
-Test,Testicolo,32423423423423,sasafaf@safaf.com,D,
+Paolo,Franco,35235325253,paolo.fraco@gmail.com,S,
