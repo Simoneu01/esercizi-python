@@ -1,0 +1,100 @@
+2019-03-21 10:32:55,483 appJar:INFO: [Line 53->1588/setLogFile]: Switched to logFile: logfile.txt
+2019-03-21 10:32:55,487 appJar:TRACE: [Line 54->8519/addLabel]: Not specifying text for labels (Benvenuto sulla PyRubrica) now uses the title for the text. If you want an empty label, pass an empty string ''
+2019-03-21 10:32:55,495 appJar:TRACE: [Line 54->3637/SET_WIDGET_FG]: SET_WIDGET_FG: Label - #000000
+2019-03-21 10:32:55,499 appJar:TRACE: [Line 54->3729/SET_WIDGET_BG]: Config Label BG to SystemButtonFace
+2019-03-21 10:32:55,507 appJar:TRACE: [Line 56->3637/SET_WIDGET_FG]: SET_WIDGET_FG: LabelFrame - #000000
+2019-03-21 10:32:55,515 appJar:TRACE: [Line 56->3729/SET_WIDGET_BG]: Config LabelFrame BG to SystemButtonFace
+2019-03-21 10:32:55,527 appJar:TRACE: [Line 64->13466/_configCells]: Config all cells
+2019-03-21 10:32:55,535 appJar:TRACE: [Line 64->13400/__init__]: SimpleTable g1 constructed, adding rows
+2019-03-21 10:32:55,539 appJar:TRACE: [Line 64->13591/_addRow]: ['Nome', 'Cognome', 'Telefono', 'E-mail', 'Categoria']
+2019-03-21 10:32:55,555 appJar:TRACE: [Line 64->13591/_addRow]: ['Fred', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:32:55,575 appJar:TRACE: [Line 64->13591/_addRow]: ['Tina', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:32:55,591 appJar:TRACE: [Line 64->13591/_addRow]: ['Clive', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:32:55,607 appJar:TRACE: [Line 64->13591/_addRow]: ['Betty', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:32:55,627 appJar:TRACE: [Line 64->13485/addRows]: Added all rows in addRows()
+2019-03-21 10:32:55,639 appJar:TRACE: [Line 64->3637/SET_WIDGET_FG]: SET_WIDGET_FG: SimpleTable - #000000
+2019-03-21 10:32:55,643 appJar:TRACE: [Line 64->3729/SET_WIDGET_BG]: Config SimpleTable BG to SystemButtonFace
+2019-03-21 10:32:55,647 appJar:TRACE: [Line 68->2905/configureWidget]: Configuring: g1 of 21 with rightClick of menu
+2019-03-21 10:32:55,651 appJar:TRACE: [Line 68->1709/__exit__]: ContextManager: starting
+2019-03-21 10:32:55,783 appJar:TRACE: [Line 68->217/SET_LOCATION]: Set location called with c, c
+2019-03-21 10:32:55,791 appJar:TRACE: [Line 68->235/SET_LOCATION]: Screen: 1280x720. Requested: 800x600. Location: 232, 41
+2019-03-21 10:32:55,791 appJar:TRACE: [Line 68->1783/go]: Showing topLevel
+2019-03-21 10:32:58,809 appJar:INFO: [Line 68->2068/stop]: --- GUI stopped ---
+2019-03-21 10:34:17,984 appJar:INFO: [Line 53->1588/setLogFile]: Switched to logFile: logfile.txt
+2019-03-21 10:34:17,992 appJar:TRACE: [Line 54->8519/addLabel]: Not specifying text for labels (Benvenuto sulla PyRubrica) now uses the title for the text. If you want an empty label, pass an empty string ''
+2019-03-21 10:34:18,000 appJar:TRACE: [Line 54->3637/SET_WIDGET_FG]: SET_WIDGET_FG: Label - #000000
+2019-03-21 10:34:18,004 appJar:TRACE: [Line 54->3729/SET_WIDGET_BG]: Config Label BG to SystemButtonFace
+2019-03-21 10:34:18,028 appJar:TRACE: [Line 63->13466/_configCells]: Config all cells
+2019-03-21 10:34:18,032 appJar:TRACE: [Line 63->13400/__init__]: SimpleTable g1 constructed, adding rows
+2019-03-21 10:34:18,040 appJar:TRACE: [Line 63->13591/_addRow]: ['Nome', 'Cognome', 'Telefono', 'E-mail', 'Categoria']
+2019-03-21 10:34:18,056 appJar:TRACE: [Line 63->13591/_addRow]: ['Fred', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:18,076 appJar:TRACE: [Line 63->13591/_addRow]: ['Tina', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:18,088 appJar:TRACE: [Line 63->13591/_addRow]: ['Clive', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:18,104 appJar:TRACE: [Line 63->13591/_addRow]: ['Betty', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:18,120 appJar:TRACE: [Line 63->13485/addRows]: Added all rows in addRows()
+2019-03-21 10:34:18,136 appJar:TRACE: [Line 63->3637/SET_WIDGET_FG]: SET_WIDGET_FG: SimpleTable - #000000
+2019-03-21 10:34:18,140 appJar:TRACE: [Line 63->3729/SET_WIDGET_BG]: Config SimpleTable BG to SystemButtonFace
+2019-03-21 10:34:18,144 appJar:TRACE: [Line 64->2905/configureWidget]: Configuring: g1 of 21 with rightClick of menu
+2019-03-21 10:34:18,148 appJar:TRACE: [Line 64->1709/__exit__]: ContextManager: starting
+2019-03-21 10:34:18,328 appJar:TRACE: [Line 64->217/SET_LOCATION]: Set location called with c, c
+2019-03-21 10:34:18,332 appJar:TRACE: [Line 64->235/SET_LOCATION]: Screen: 1280x720. Requested: 800x600. Location: 232, 41
+2019-03-21 10:34:18,340 appJar:TRACE: [Line 64->1783/go]: Showing topLevel
+2019-03-21 10:34:56,288 appJar:INFO: [Line 53->1588/setLogFile]: Switched to logFile: logfile.txt
+2019-03-21 10:34:56,296 appJar:TRACE: [Line 54->8519/addLabel]: Not specifying text for labels (Benvenuto sulla PyRubrica) now uses the title for the text. If you want an empty label, pass an empty string ''
+2019-03-21 10:34:56,304 appJar:TRACE: [Line 54->3637/SET_WIDGET_FG]: SET_WIDGET_FG: Label - #000000
+2019-03-21 10:34:56,312 appJar:TRACE: [Line 54->3729/SET_WIDGET_BG]: Config Label BG to SystemButtonFace
+2019-03-21 10:34:56,352 appJar:TRACE: [Line 63->13466/_configCells]: Config all cells
+2019-03-21 10:34:56,360 appJar:TRACE: [Line 63->13400/__init__]: SimpleTable g1 constructed, adding rows
+2019-03-21 10:34:56,364 appJar:TRACE: [Line 63->13591/_addRow]: ['Nome', 'Cognome', 'Telefono', 'E-mail', 'Categoria']
+2019-03-21 10:34:56,380 appJar:TRACE: [Line 63->13591/_addRow]: ['Fred', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:56,400 appJar:TRACE: [Line 63->13591/_addRow]: ['Tina', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:56,416 appJar:TRACE: [Line 63->13591/_addRow]: ['Clive', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:56,432 appJar:TRACE: [Line 63->13591/_addRow]: ['Betty', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:34:56,452 appJar:TRACE: [Line 63->13485/addRows]: Added all rows in addRows()
+2019-03-21 10:34:56,468 appJar:TRACE: [Line 63->3637/SET_WIDGET_FG]: SET_WIDGET_FG: SimpleTable - #000000
+2019-03-21 10:34:56,472 appJar:TRACE: [Line 63->3729/SET_WIDGET_BG]: Config SimpleTable BG to SystemButtonFace
+2019-03-21 10:34:56,484 appJar:TRACE: [Line 66->2905/configureWidget]: Configuring: g1 of 21 with rightClick of menu
+2019-03-21 10:34:56,488 appJar:TRACE: [Line 66->1709/__exit__]: ContextManager: starting
+2019-03-21 10:34:56,656 appJar:TRACE: [Line 66->217/SET_LOCATION]: Set location called with c, c
+2019-03-21 10:34:56,664 appJar:TRACE: [Line 66->235/SET_LOCATION]: Screen: 1280x720. Requested: 800x600. Location: 232, 41
+2019-03-21 10:34:56,672 appJar:TRACE: [Line 66->1783/go]: Showing topLevel
+2019-03-21 10:35:54,068 appJar:INFO: [Line 53->1588/setLogFile]: Switched to logFile: logfile.txt
+2019-03-21 10:35:54,072 appJar:TRACE: [Line 54->8519/addLabel]: Not specifying text for labels (Benvenuto sulla PyRubrica) now uses the title for the text. If you want an empty label, pass an empty string ''
+2019-03-21 10:35:54,080 appJar:TRACE: [Line 54->3637/SET_WIDGET_FG]: SET_WIDGET_FG: Label - #000000
+2019-03-21 10:35:54,088 appJar:TRACE: [Line 54->3729/SET_WIDGET_BG]: Config Label BG to SystemButtonFace
+2019-03-21 10:35:54,104 appJar:TRACE: [Line 63->13466/_configCells]: Config all cells
+2019-03-21 10:35:54,108 appJar:TRACE: [Line 63->13400/__init__]: SimpleTable g1 constructed, adding rows
+2019-03-21 10:35:54,112 appJar:TRACE: [Line 63->13591/_addRow]: ['Nome', 'Cognome', 'Telefono', 'E-mail', 'Categoria']
+2019-03-21 10:35:54,132 appJar:TRACE: [Line 63->13591/_addRow]: ['Fred', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:35:54,148 appJar:TRACE: [Line 63->13591/_addRow]: ['Tina', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:35:54,164 appJar:TRACE: [Line 63->13591/_addRow]: ['Clive', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:35:54,192 appJar:TRACE: [Line 63->13591/_addRow]: ['Betty', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 10:35:54,208 appJar:TRACE: [Line 63->13485/addRows]: Added all rows in addRows()
+2019-03-21 10:35:54,228 appJar:TRACE: [Line 63->3637/SET_WIDGET_FG]: SET_WIDGET_FG: SimpleTable - #000000
+2019-03-21 10:35:54,236 appJar:TRACE: [Line 63->3729/SET_WIDGET_BG]: Config SimpleTable BG to SystemButtonFace
+2019-03-21 10:35:54,244 appJar:WARNING: [Line 66]: Unknown function: <setSimpleTableRightClick> Check your spelling, do you need more camelCase?
+2019-03-21 10:35:54,248 appJar:TRACE: [Line 66->1709/__exit__]: ContextManager: starting
+2019-03-21 10:35:54,420 appJar:TRACE: [Line 66->217/SET_LOCATION]: Set location called with c, c
+2019-03-21 10:35:54,428 appJar:TRACE: [Line 66->235/SET_LOCATION]: Screen: 1280x720. Requested: 800x600. Location: 232, 41
+2019-03-21 10:35:54,432 appJar:TRACE: [Line 66->1783/go]: Showing topLevel
+2019-03-21 10:37:02,665 appJar:INFO: [Line 66->2068/stop]: --- GUI stopped ---
+2019-03-21 13:28:56,944 appJar:INFO: [Line 53->1588/setLogFile]: Switched to logFile: logfile.txt
+2019-03-21 13:28:56,944 appJar:TRACE: [Line 54->8519/addLabel]: Not specifying text for labels (Benvenuto sulla PyRubrica) now uses the title for the text. If you want an empty label, pass an empty string ''
+2019-03-21 13:28:56,960 appJar:TRACE: [Line 54->3637/SET_WIDGET_FG]: SET_WIDGET_FG: Label - #000000
+2019-03-21 13:28:56,960 appJar:TRACE: [Line 54->3729/SET_WIDGET_BG]: Config Label BG to SystemButtonFace
+2019-03-21 13:28:56,975 appJar:TRACE: [Line 63->13466/_configCells]: Config all cells
+2019-03-21 13:28:56,975 appJar:TRACE: [Line 63->13400/__init__]: SimpleTable g1 constructed, adding rows
+2019-03-21 13:28:56,991 appJar:TRACE: [Line 63->13591/_addRow]: ['Nome', 'Cognome', 'Telefono', 'E-mail', 'Categoria']
+2019-03-21 13:28:57,007 appJar:TRACE: [Line 63->13591/_addRow]: ['Fred', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 13:28:57,022 appJar:TRACE: [Line 63->13591/_addRow]: ['Tina', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 13:28:57,038 appJar:TRACE: [Line 63->13591/_addRow]: ['Clive', 'Male', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 13:28:57,054 appJar:TRACE: [Line 63->13591/_addRow]: ['Betty', 'Female', '3203204953', 'simoneungaro@hotmail.it', 'S']
+2019-03-21 13:28:57,069 appJar:TRACE: [Line 63->13485/addRows]: Added all rows in addRows()
+2019-03-21 13:28:57,085 appJar:TRACE: [Line 63->3637/SET_WIDGET_FG]: SET_WIDGET_FG: SimpleTable - #000000
+2019-03-21 13:28:57,100 appJar:TRACE: [Line 63->3729/SET_WIDGET_BG]: Config SimpleTable BG to SystemButtonFace
+2019-03-21 13:28:57,100 appJar:WARNING: [Line 66]: Unknown function: <setSimpleTableRightClick> Check your spelling, do you need more camelCase?
+2019-03-21 13:28:57,116 appJar:TRACE: [Line 66->1709/__exit__]: ContextManager: starting
+2019-03-21 13:28:57,241 appJar:TRACE: [Line 66->217/SET_LOCATION]: Set location called with c, c
+2019-03-21 13:28:57,257 appJar:TRACE: [Line 66->235/SET_LOCATION]: Screen: 1280x720. Requested: 800x600. Location: 232, 41
+2019-03-21 13:28:57,257 appJar:TRACE: [Line 66->1783/go]: Showing topLevel
+2019-03-21 13:29:41,174 appJar:INFO: [Line 66->2068/stop]: --- GUI stopped ---
