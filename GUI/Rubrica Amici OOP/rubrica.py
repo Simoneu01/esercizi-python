@@ -6,7 +6,7 @@
 
 from appJar import gui
 import time
-
+cercati=[]
 # OOP
 class Rubrica(object):
     def __init__(self, lista):
@@ -137,13 +137,12 @@ def showTime():
     app.setStatusbar(time.strftime("%X"))
 
 def keyPress(key):
+    global cercati
     if key == '<Enter>':
-        a = []
         for x in rubrica.rubrica:
-            if app.getEntry('Search') in x:
-                a.append(x)
-
-    return a
+            if app.getEntry('Search') in x.get():
+                cercati.append(x)
+    return cercati
 # Crea oggetto Rubrica
 rubrica = Rubrica(gen_list_from_txt('amici.txt', ',', 1))
 
@@ -161,7 +160,7 @@ with gui("PyRubrica", "800x600") as app:
         words.append(i.get()[0] + ' ' + i.get()[1])
     app.addAutoEntry('Search', words)
     app.addButton('Cerca', press)
-    app.bindKey('<Enter>', keyPress)
+    print(app.bindKey('<Enter>', keyPress))
     app.addButton('Aggiungi', press)
     app.setLabelBg("l1", "red")
     prova = gen_list_from_txt('amici.txt', ',', 1)
