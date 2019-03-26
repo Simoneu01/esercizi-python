@@ -90,10 +90,11 @@ app.setTextAreaHeight("t1", 10)
 fileMenus = ["Nuovo", "Apri..", "Salva", "Salva con nome...", "-", "Esci"]
 fileMenus2 = ['Guida', 'Informazioni su PyNotepad']
 app.addMenuList("File", fileMenus, menupress)
+app.addMenuList("Aiuto", ["Aiuto", "Informazioni su AppJar"], [app.appJarHelp, app.appJarAbout])
 app.addMenuList("?", fileMenus2, menupress)
-app.bindKeys(["<Control_L>" + "<S>", "<Control_L>" + "<s>"], keypress1)
-app.bindKeys(["<Control_L>" + "<N>", "<Control_L>" + "<n>"], keypress2)
-app.bindKeys(["<Control_L>" + "<O>", "<Control_L>" + "<o>"], keypress3)
+app.bindKeys(["<Control_L>" + "<S>", "<Control_L>" + "<s>"], keypress)
+app.bindKeys(["<Control_L>" + "<N>", "<Control_L>" + "<n>"], keypress)
+app.bindKeys(["<Control_L>" + "<O>", "<Control_L>" + "<o>"], keypress)
 
 # start the GUI
 app.go()

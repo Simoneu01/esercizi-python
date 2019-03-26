@@ -78,10 +78,6 @@ def flat(lista):
     return [j for i in lista for j in i]
 
 
-li = gen_list_from_txt('amici.txt', ',', 1)
-rubrica = Rubrica(li)
-
-
 def press(button):
     if button == 'Aggiungi':
         app.showSubWindow('crea_contatto')
@@ -115,7 +111,10 @@ def press(button):
             except:
                 app.setLabel('e' + str(i), prova[i][4])
         app.stopScrollPane()
-
+    elif button == 'Pulisci':
+        app.clearAllEntries()
+    elif button == 'Cerca':
+        print(app.getEntry('Search'))
 
 def creaContatto():
     global rubrica
@@ -126,23 +125,43 @@ def creaContatto():
     new_lista.append(app.getEntry('E-Mail'))
     new_lista.append(app.getEntry('Categoria'))
     print(new_lista)
-    if new_lista == ['','','','','']:
-        pass
+    if new_lista[0] == '' or new_lista[2] == '':
+        app.retryBox('Errore', 'Inserisci i campi obbligatori (*)', parent='crea_contatto')
     else:
         rubrica.aggiungi(new_lista)
+        app.clearAllEntries()
+        app.hideSubWindow('crea_contatto')
 
 
 def showTime():
     app.setStatusbar(time.strftime("%X"))
 
+def keyPress(key):
+    if key == '<Enter>':
+        a = []
+        for x in rubrica.rubrica:
+            if app.getEntry('Search') in x:
+                a.append(x)
 
+    return a
+# Crea oggetto Rubrica
+rubrica = Rubrica(gen_list_from_txt('amici.txt', ',', 1))
+
+# GUI
 with gui("PyRubrica", "800x600") as app:
+    app.setFont(18)
     # add a statusbar to show the time
     app.addStatusbar(side="RIGHT")
     app.registerEvent(showTime)
     app.stopFunction = logoutFunction
     app.addMenuList("?", ["Aiuto", "Informazioni su PyRubrica"], [app.appJarHelp, app.appJarAbout])
     app.label('l1', "Benvenuto sulla PyRubrica")
+    words = []
+    for i in rubrica.rubrica:
+        words.append(i.get()[0] + ' ' + i.get()[1])
+    app.addAutoEntry('Search', words)
+    app.addButton('Cerca', press)
+    app.bindKey('<Enter>', keyPress)
     app.addButton('Aggiungi', press)
     app.setLabelBg("l1", "red")
     prova = gen_list_from_txt('amici.txt', ',', 1)
@@ -154,16 +173,20 @@ with gui("PyRubrica", "800x600") as app:
         app.addLabel('d' + str(i), prova[i][3], i, 3)
         app.addLabel('e' + str(i), prova[i][4], i, 4)
     app.stopScrollPane()
-    app.startSubWindow('crea_contatto', modal=True)
+
+    app.startSubWindow('crea_contatto', 'Crea Contatto', modal=True)
+    app.setSize('450x300')
     app.setBg('yellow')
-    app.setFont(22)
-    app.addLabel('title', 'Crea nuovo Contatto')
-    app.setLabelBg('title', 'green')
-    app.addLabelEntry('Nome')
-    app.addLabelEntry('Cognome')
-    app.addLabelEntry('Telefono')
-    app.addLabelEntry('E-Mail')
-    app.addLabelEntry('Categoria')
-    app.addButton('Salva', press)
+    app.addLabel('nome', 'Nome *', 0, 0)
+    app.addEntry('Nome', 0, 1)
+    app.addLabel('cognome','Cognome', 1, 0)
+    app.addEntry('Cognome', 1, 1)
+    app.addLabel('telefono', 'Telefono *', 2, 0)
+    app.addEntry('Telefono', 2, 1)
+    app.addLabel('e-Mail', 'E-mail', 3, 0)
+    app.addEntry('E-Mail', 3, 1)
+    app.addLabel('categoria','Categoria', 4, 0)
+    app.addEntry('Categoria', 4, 1)
+    app.addButtons(['Pulisci', 'Salva'], press, 5,1)
     app.stopSubWindow()
 
