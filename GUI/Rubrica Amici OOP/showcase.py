@@ -1,7 +1,8 @@
+from appJar import gui
 import sys
 import time
 sys.path.append("../../")
-from appJar import gui
+
 
 # global variable to remember what's being dragged
 dragged = "dd"
@@ -283,12 +284,15 @@ with gui("ShowCase") as app:
     with app.subWindow("AddressBook", transient=True):
         app.sticky = 'news'
         app.stretch = 'both'
-        app.size = (300,350)
-        app.location = (600,50)
+        app.size = (300, 350)
+        app.location = (600, 50)
         with app.pagedWindow("AddressBook"):
-            with app.page(): app.label("PP1")
-            with app.page(): app.label("PP2")
-            with app.page(): app.label("PP3")
+            with app.page():
+                app.label("PP1")
+            with app.page():
+                app.label("PP2")
+            with app.page():
+                app.label("PP3")
 
     # start logged out
     logout()

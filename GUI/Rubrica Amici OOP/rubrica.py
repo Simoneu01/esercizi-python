@@ -6,6 +6,7 @@
 
 from appJar import gui
 import time
+
 cercati=[]
 # OOP
 class Rubrica(object):
@@ -45,21 +46,6 @@ class Persona(object):
         get_lista.append(self.categoria)
         return get_lista
 
-# GUI
-def modifica():
-    print('modifica')
-
-# function to confirm logout
-def logoutFunction():
-    return app.yesNoBox("Confirm Exit", "Are you sure you want to exit?")
-
-
-def aggiungi():
-    app.addTableRow('g1', app.getTableEntries('g1'))
-    print(app.getTableEntries('g1'))
-    with open('amici.txt', 'a+') as f:
-        for i in app.getTableEntries('g1'):
-            f.writelines(i+',')
 
 
 def gen_list_from_txt(nome_file, sep=';', header=0, delete_chars='\n'):
@@ -77,19 +63,9 @@ def gen_list_from_txt(nome_file, sep=';', header=0, delete_chars='\n'):
 def flat(lista):
     return [j for i in lista for j in i]
 
+'''
 
-def press(button):
-    if button == 'Aggiungi':
-        app.showSubWindow('crea_contatto')
-    elif button == 'Salva':
-        creaContatto()
-        app.show()
-        prova = []
-        for i in range(len(rubrica.rubrica)):
-            prova.append(rubrica.rubrica[i].get())
-
-        app.openScrollPane('rubrica')
-        for i in range(len(prova)):
+for i in range(len(prova)):
             try:
                 app.addLabel('a' + str(i), prova[i][0], i, 0)
             except:
@@ -110,11 +86,34 @@ def press(button):
                 app.addLabel('e' + str(i), prova[i][4], i, 4)
             except:
                 app.setLabel('e' + str(i), prova[i][4])
+
+# GUI
+def modifica():
+    print('modifica')
+    
+    
+# function to confirm logout
+def logoutFunction():
+    return app.yesNoBox("Confirm Exit", "Are you sure you want to exit?")
+    
+def press(button):
+    if button == 'Aggiungi':
+        app.showSubWindow('crea_contatto')
+    elif button == 'Salva':
+        creaContatto()
+        app.show()
+        prova = []
+        for i in rubrica.rubrica:
+            words.append(i.get()[0] + ' ' + i.get()[1])
+        for i in range(len(rubrica.rubrica)):
+            prova.append(rubrica.rubrica[i].get())
+
+        app.openScrollPane('rubrica')
         app.stopScrollPane()
     elif button == 'Pulisci':
         app.clearAllEntries()
     elif button == 'Cerca':
-        print(app.getEntry('Search'))
+        enter()
 
 def creaContatto():
     global rubrica
@@ -136,13 +135,38 @@ def creaContatto():
 def showTime():
     app.setStatusbar(time.strftime("%X"))
 
-def keyPress(key):
+def enter():
     global cercati
-    if key == '<Enter>':
-        for x in rubrica.rubrica:
-            if app.getEntry('Search') in x.get():
-                cercati.append(x)
+    cercati = []
+    a = app.getEntry('Search').split(' ')
+    for x in rubrica.rubrica:
+        if a[0] in x.get()[0] or a[1] in x.get()[1]:
+            cercati.append(x)
+        print(cercati)
+    stampaCercati()
     return cercati
+
+
+def press5():
+    print('funge')
+
+
+def stampaCercati():
+    global cercati
+    n = 0
+    app.openScrollPane('rubrica')
+    for x in cercati:
+        try:
+            app.addLabel('n'+str(n), x.get()[0]+' '+x.get()[1], n, 0)
+        except:
+            app.setLabel('n'+str(n), x.get()[0]+' '+x.get()[1])
+        try:
+            app.addButton('modifica'+str(n), 'Modifica', press5, n, 1)
+        except:
+            app.setButton('modifica'+str(n), 'Modifica')
+        n+=1
+    app.stopScrollPane()
+
 # Crea oggetto Rubrica
 rubrica = Rubrica(gen_list_from_txt('amici.txt', ',', 1))
 
@@ -160,17 +184,12 @@ with gui("PyRubrica", "800x600") as app:
         words.append(i.get()[0] + ' ' + i.get()[1])
     app.addAutoEntry('Search', words)
     app.addButton('Cerca', press)
-    print(app.bindKey('<Enter>', keyPress))
+    app.enableEnter(enter)
     app.addButton('Aggiungi', press)
     app.setLabelBg("l1", "red")
     prova = gen_list_from_txt('amici.txt', ',', 1)
     app.startScrollPane('rubrica')
-    for i in range(len(prova)):
-        app.addLabel('a' + str(i), prova[i][0], i, 0)
-        app.addLabel('b' + str(i), prova[i][1], i, 1)
-        app.addLabel('c' + str(i), prova[i][2], i, 2)
-        app.addLabel('d' + str(i), prova[i][3], i, 3)
-        app.addLabel('e' + str(i), prova[i][4], i, 4)
+    print('pass')
     app.stopScrollPane()
 
     app.startSubWindow('crea_contatto', 'Crea Contatto', modal=True)
@@ -188,4 +207,4 @@ with gui("PyRubrica", "800x600") as app:
     app.addEntry('Categoria', 4, 1)
     app.addButtons(['Pulisci', 'Salva'], press, 5,1)
     app.stopSubWindow()
-
+'''
